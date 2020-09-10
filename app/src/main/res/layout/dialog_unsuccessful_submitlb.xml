@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="@dimen/submitlb_dialog_images"
+        android:layout_height="@dimen/submitlb_dialog_images"
+        android:layout_gravity="center"
+        android:maxWidth="@dimen/submitlb_dialog_images"
+        android:maxHeight="@dimen/submitlb_dialog_images"
+        android:src="@drawable/ic_baseline_warning_24"
+        android:backgroundTint="@color/colorAccent" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_standard"
+        android:layout_gravity="center_horizontal"
+        android:padding="@dimen/standard_padding"
+        android:text="@string/unsuccessful"
+        android:textSize="@dimen/text_large"
+        android:textStyle="bold"/>
+
+</LinearLayout>

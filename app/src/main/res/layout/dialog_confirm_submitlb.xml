@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/cancel_submitlb_button"
+        android:layout_width="81dp"
+        android:layout_height="98dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="@dimen/medium_margin"
+        android:layout_marginTop="@dimen/margin_standard"
+        android:backgroundTint="@color/colorwhite"
+        android:padding="@dimen/standard_padding"
+        android:src="@drawable/ic_baseline_cancelblack_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <LinearLayout
+
+        android:id="@+id/submit_cancel_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cancel_submitlb_button"
+        android:layout_marginTop="47dp"
+        android:layout_marginBottom="@dimen/large_margin"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/sure_tosubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/standard_padding"
+            android:text="@string/are_you_ok_tosubmit"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/big_questionmark"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingStart="@dimen/medium_padding"
+            android:paddingEnd="@dimen/standard_padding"
+            android:text="@string/big_questionmark"
+            android:textSize="48sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+        <Button
+            android:id="@+id/submit_confirm_button"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/submit_cancel_text"
+            app:strokeWidth="1.5dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/extra_large_margin"
+            android:text="@string/submit_yes"
+            android:padding="@dimen/medium_padding"
+            android:textAllCaps="false"
+            android:textSize="@dimen/text_large"
+            android:textStyle="bold"
+            android:textColor="@color/colorOrangeLight"
+            android:textAppearance="@style/Theme.MaterialComponents"
+            android:background="@color/colorwhite"
+            app:cornerRadius="@dimen/btnyes_corner_radius"
+            app:strokeColor="@color/colorOrange" />
+</RelativeLayout>

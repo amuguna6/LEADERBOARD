@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">LEADERBOARD</string>
+    <string name="tab_text_learning">Learning Leaders</string>
+    <string name="tab_text_iqskill">Skill IQ Leaders</string>
+    <dimen name="appbar_padding">16dp</dimen>
+
+    <string name="btn_submit">Submit</string>
+    <string name="splash_image">Splash Screen</string>
+    <string name="top_learner_name">Top Learner Name</string>
+    <string name="learning_hours">Learning hours</string>
+    <string name="skilliq_name">SkllIQ Learner name</string>
+    <string name="skillig_description">Skill IQ Description</string>
+    <string name="app_lblogo">LearnerBoard Logo</string>
+    <string name="project_lbsubmit">Project Submission</string>
+    <string name="submit_lb_first_name">First Name</string>
+    <string name="submit_lb_last_name">Last Name</string>
+    <string name="submit_lb_githublink">Project on GITHUB (LINK)</string>
+    <string name="submit_lb_email">Email Address</string>
+    <string name="submit_btn_orange">Submit</string>
+    <string name="are_you_ok_tosubmit">Are You Sure </string>
+    <string name="big_questionmark">\?</string>
+    <string name="submit_yes">Yes</string>
+    <string name="unsuccessful">Submission not Successful</string>
+    <string name="successful">Successful Submission</string>
+</resources>

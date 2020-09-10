@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/colorblack"
+    android:theme="@style/Theme.MaterialComponents.DayNight.DarkActionBar"
+    tools:context=".SubmitLBActivity">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="243dp"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="336dp"
+            android:layout_height="wrap_content"
+            android:elevation="16dp">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/medium_margin"
+                android:contentDescription="@string/app_lblogo"
+                android:foregroundGravity="center"
+                android:orientation="horizontal"
+                android:padding="@dimen/appbar_padding_top"
+                android:src="@drawable/submitlb_logo" />
+
+        </com.google.android.material.appbar.MaterialToolbar>
+
+        <TextView
+            android:id="@+id/submit_titile_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingStart="@dimen/standard_padding"
+            android:paddingTop="@dimen/standard_padding"
+            android:paddingEnd="@dimen/standard_padding"
+            android:paddingBottom="@dimen/medium_padding"
+            android:text="@string/project_lbsubmit"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium.Inverse"
+            android:textColor="@color/colorOrangeLight"
+            android:textSize="@dimen/text_large"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/submitlb_view"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="@dimen/large_margin"
+            android:background="@drawable/submitlb_shaped"
+            android:padding="@dimen/text_padding" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="69dp"
+        android:layout_marginTop="@dimen/margin_standard"
+        android:layout_marginBottom="@dimen/large_margin"
+        android:orientation="horizontal">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/submit_lb_first_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/medium_margin"
+            android:layout_marginEnd="@dimen/margin_standard"
+            android:layout_weight="1"
+            android:background="@drawable/submit_lbtext"
+            android:hint="@string/submit_lb_first_name"
+            android:inputType="text"
+            android:padding="@dimen/standard_padding"
+            android:textCursorDrawable="@drawable/submit_lbcursor"
+            android:textStyle="bold" />
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/submit_lb_last_name"
+            android:layout_width="155dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/small_margin"
+            android:layout_marginEnd="@dimen/margin_standard"
+            android:layout_weight="1"
+            android:background="@drawable/submit_lbtext"
+            android:hint="@string/submit_lb_last_name"
+            android:inputType="text"
+            android:padding="@dimen/standard_padding"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium.Inverse"
+            android:textCursorDrawable="@drawable/submit_lbcursor"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/submit_lb_email"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_marginStart="@dimen/large_margin"
+        android:layout_marginEnd="@dimen/large_margin"
+        android:layout_marginBottom="@dimen/large_margin"
+        android:background="@drawable/submit_lbtext"
+        android:hint="@string/submit_lb_email"
+        android:inputType="textImeMultiLine"
+        android:padding="@dimen/standard_padding"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium.Inverse"
+        android:textCursorDrawable="@drawable/submit_lbcursor"
+        android:textStyle="bold" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/submit_lb_github"
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:layout_marginStart="@dimen/large_margin"
+        android:layout_marginEnd="@dimen/large_margin"
+        android:layout_marginBottom="@dimen/large_margin"
+        android:background="@drawable/submit_lbtext"
+        android:hint="@string/submit_lb_githublink"
+        android:inputType="textImeMultiLine"
+        android:padding="@dimen/standard_padding"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium.Inverse"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/submit_lb_button"
+        android:layout_width="125dp"
+        android:layout_height="43dp"
+        android:layout_gravity="center"
+        android:background="@drawable/btn_submit_lb_orange"
+        android:padding="@dimen/medium_padding"
+        android:text="@string/submit_btn_orange"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium.Inverse"
+        android:textColorHint="@color/colorwhite"
+        android:textColorLink="@color/colorwhite"
+        android:textStyle="bold" />
+
+
+</LinearLayout>
